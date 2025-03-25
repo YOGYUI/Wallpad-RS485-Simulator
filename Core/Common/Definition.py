@@ -7,8 +7,8 @@ from enum import IntEnum, unique, auto
 class DeviceType(IntEnum):
     UNSPECIFIED = 0
     LIGHT = auto()
-    EMOTIONLIGHT = auto()
     DIMMINGLIGHT = auto()
+    EMOTIONLIGHT = auto()
     OUTLET = auto()
     THERMOSTAT = auto()
     AIRCONDITIONER = auto()
@@ -29,6 +29,14 @@ class WallpadVendor(IntEnum):
     CVNET = auto()
     KYUNGDONG = auto()
     BESTIN = auto()
+
+
+@unique
+class PacketType(IntEnum):
+    UNSPECIFIED = 0
+    QUERY = 1
+    COMMAND = 2
+    RESPONSE = 3
 
 
 def checkAgrumentType(obj, arg):
