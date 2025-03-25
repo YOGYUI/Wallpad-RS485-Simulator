@@ -1,0 +1,23 @@
+{
+    "wallpad_vendor": 0,
+    "rs485": [
+        {
+            "port": "/dev/ttyUSB0",
+            "name": "Port1",
+            "baudrate": 9600,
+            "bytesize": 8,
+            "parity": "N",
+            "stopbits": 1
+        }
+    ],
+    "device": [
+        {
+            "type": 1,
+            "name": "LIGHT1",
+            "index": 0,
+            "room_index": 1,
+            "rs485_index": 0
+        }
+    ],
+    "enable_periodic_query": true
+}
